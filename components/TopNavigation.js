@@ -18,7 +18,7 @@ function getStyles(props) {
         title: {
             fontFamily: 'Comfortaa',
             color: props.palette.accent1Color,
-            fontSize: '2em',
+            fontSize: '1.39em',
             letterSpacing: 10,
             textDecoration: 'none',
             marginLeft: 10,
