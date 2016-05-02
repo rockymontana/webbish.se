@@ -4,11 +4,11 @@ import React, { Component } from 'react'
 export default class Home extends Component {
   constructor(props, context) {
     super(props, context)
-    
+
     this.styles = {
       headline: {
         fontFamily: 'Comfortaa',
-        paddingTop: 20,
+        paddingTop: 0,
       }
     }
 }

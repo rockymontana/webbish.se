@@ -18,7 +18,7 @@ function getStyles(props) {
         title: {
             fontFamily: 'Comfortaa',
             color: props.palette.accent1Color,
-            fontSize: '1.39em',
+            fontSize: '1.69em',
             letterSpacing: 10,
             textDecoration: 'none',
             marginLeft: 10,
@@ -67,15 +67,16 @@ function getStyles(props) {
             style: {
                 backgroundColor: props.palette.primary1Color,
                 color: props.palette.primary2Color,
+                margin: '0 !important',
             },
             left: {
                 textAlign: 'center',
                 fontWeight: 600,
             },
             right: {
-                float: 'right',
-                paddingLeft: 20,
                 display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
             }
         }
     }
@@ -91,10 +92,16 @@ export default class TopNavigation extends Component {
         return (
             <AppBar
                 style={this.styles.toolbar.style}
+                className='AppBar'
                 showMenuIconButton={false}
                 zDepth={5}
                 title={<IndexLink to='/' style={this.styles.title}>WEBBISH</IndexLink>}
                 titleStyle={this.styles.title}
+                iconStyleRight={{
+                    margin:0,
+                    display: 'flex',
+                    alignItems: 'center',
+                }}
                 iconElementRight={
                     <div style={this.styles.toolbar.right}>
                         <FlatButton

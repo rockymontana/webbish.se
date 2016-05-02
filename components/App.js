@@ -29,7 +29,7 @@ function getStyles() {
         color: muiTheme.palette.primary1Color,
         width: '49%',
         position: 'absolute',
-        top: 45,
+        top: 65,
         bottom: 0,
         padding: 10
       },
